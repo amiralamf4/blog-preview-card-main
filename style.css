@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Figtree-light;
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+:root{
+    --yellow :hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --gray-500 : hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+    --font-size: 16px;
+}
+
+*{
+ margin: 0;
+padding: 0;
+font-family: Figtree-light;
+}
+ 
+html, body {
+height:100%;
+width:100%;
+background-color: var(--yellow);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main{
+    width: 300px;
+    height: auto;
+    background-color: var(--White);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1.5px solid;
+    box-shadow: 8px 8px;
+}
+.hero{
+    width:100% ;
+    height: 40%;
+}
+.hero img{
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    margin-top: 16px;
+    padding: 5px  9px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+}
+.info{
+    margin: 20px 0px; 
+}
+.info h1{
+    font-size: 1.4rem;
+    margin: 15px 0px;
+    font-weight: 800;
+    cursor: pointer;
+    &:hover{
+        color: var(--yellow);
+    }
+}
+
+
+
+.info p{
+    color: var(--gray-500);
+    &:nth-child(1){
+        font-weight: 600;
+        color: var(--gray-950);
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+footer img{
+    height: 35px;
+}
+footer h2{
+     font-size: var(--font-size);
+
+}
+#author {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    
+}
+#author a{
+    text-decoration: none;
+    color: var(--gray-500);
+    &:hover{
+        color: var(--gray-950);
+    }
+}
